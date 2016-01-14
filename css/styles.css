@@ -1,0 +1,25 @@
+/*this is for branching*/
+#result1 {
+    display: none;
+}
+#result2 {
+    display: none;
+}
+#result3 {
+    display: none;
+}
+#result4 {
+    display: none;
+}
+
+
+/*for divs.html*/
+.divs {
+  color: blue
+}
+
+/*for floats.html*/
+img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
