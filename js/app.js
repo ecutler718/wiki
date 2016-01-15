@@ -3,8 +3,8 @@
 $(document).ready(function() {
 
 //looping.html
- var bottles = 20;
- for (bottles= 20; bottles >= 1; bottles -=1) {
+var bottles = 20;
+for (bottles= 20; bottles >= 1; bottles -=1) {
 
    $(".loop").append(bottles + "loops ")
 
@@ -42,4 +42,48 @@ $(document).ready(function() {
 
     event.preventDefault();
   })
+
+//forms.html
+
+$('#blanks form').submit(function(event) {
+    fname = $("input#fname").val();
+    lname = $("input#lname").val();
+    phone = $("input#mobile").val();
+
+
+$('.fname').text(fname);
+
+    event.preventDefault();
+    });
+
+
+
+
+//database stuff
+
+
+  index = lunr(function () {
+  this.field('title', 10)
+  this.field('body')
+
+
+});
+
+
+index.add({
+   id: 1,
+   title: 'Arrays',
+   body: '../html/arrays.html'
+ })
+
+ index.add({
+   id: 2,
+   title: 'Bar',
+   body: 'Bar bar bar!'
+ })
+
+
+
+
+
 });

@@ -23,3 +23,16 @@ img {
     float: right;
     margin: 0 0 10px 10px;
 }
+
+/*for cascading.html*/
+.cascading1{
+  font-family:fantasy;
+}
+
+.cascading{
+  font-family: cursive;
+}
+
+.jumbotron{
+  margin-top: 30px;
+}
